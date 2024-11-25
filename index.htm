@@ -97,11 +97,19 @@ body {
     font-size: 24px;
 }
 
+/*.project-gallery {*/
+  /*  display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*gap: 20px;*/
+/*}*/
 .project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center align items */
+    margin: 0 auto; /* Center align the entire gallery */
+    max-width: 1000px; /* Optional: Set a max-width for the gallery */
 }
 
 .project-item {
@@ -122,13 +130,13 @@ body {
 
 /* Enhanced Zoom Effect for Power BI */
 .category:nth-of-type(2) .project-item img:hover {
-    transform: scale(4); /* Double zoom effect */
+    transform: scale(5); /* Double zoom effect */
     z-index: 2; /* Keep the zoomed image on top */
 }
 
 /* General Zoom Effect */
 .project-item img:hover {
-    transform: scale(4); /* Double zoom effect */
+    transform: scale(3.8); /* Double zoom effect */
     z-index: 2; /* Ensure zoomed image is on top */
 }
 
@@ -158,14 +166,6 @@ body {
     color: #80e27e;
 }
 
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 20px; /* Space between items */
-    justify-items: center; /* Center align items */
-    margin: 0 auto; /* Center align the entire gallery */
-    max-width: 1200px; /* Optional: Set a max-width for the gallery */
-}
 
 
     </style>
