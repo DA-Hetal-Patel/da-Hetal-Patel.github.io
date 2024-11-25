@@ -165,7 +165,36 @@ body {
 .contact ul a:hover {
     color: #80e27e;
 }
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the entire container horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    text-align: left; /* Left-align the text inside the container */
+    margin: 20px auto; /* Center the container horizontally and add margin */
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Ensure good spacing between lines */
+    width: 90%;  /* Reduce padding by setting width to 90% of the screen */
+    max-width: 1200px; /* Set a max-width to prevent stretching too much */
+}
 
+.skills-container p {
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%; /* Take up the full width inside the container */
+}
+
+.skills-container strong {
+    font-weight: bold;
+    color: #004d40; /* Customize this color */
+}
+
+.skills-container strong:before {
+    content: "• "; /* Add bullet point before the title */
+    color: #004d40; /* Match bullet color to the title */
+    font-size: 1.2em; /* Make the bullet slightly bigger */
+    padding-right: 8px; /* Add spacing between bullet and text */
+}
 
 
     </style>
@@ -204,22 +233,25 @@ body {
 
         <div id="skills" class="section">
             <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Power BI</li>
-                <li>Tableau</li>
-                <li>SQL (MySQL, PostgreSQL)</li>
-                <li>Python (Pandas, NumPy, Matplotlib)</li>
-                <li>Excel (Advanced Formulas, Pivot Tables)</li>
-                <li>Data Analysis & Visualization</li>
-                <li>Data Cleaning & Transformation</li>
-                <li>Business Intelligence</li>
-                <li>Problem-Solving & Analytical Thinking</li>
-            </ul>
+			<div class="skills-container">
+			<p><strong>Business Intelligence & Reporting Tools:</strong> Power BI (DAX, Power Query, Paginated Reports), Tableau, Looker, SSRS, Google Data Studio</p>
+			<p><strong>Programming Languages:</strong> SQL (MySQL, PostgreSQL, T-SQL), PL/SQL, Python (Pandas, NumPy, Matplotlib), R</p>
+			<p><strong>Database & ETL Technologies:</strong> MS SQL Server, PostgreSQL, SSIS, Azure Data Factory, AWS Redshift, Oracle</p>
+			<p><strong>Data Preparation & Analysis:</strong> Data Cleaning, Transformation, and Modeling, Predictive Analytics</p>
+			<p><strong>Big Data Technologies:</strong> PySpark, Kafka, Hadoop, Hive</p>
+			<p><strong>Project Management & Collaboration:</strong> JIRA, Confluence, Agile, Scrum</p>
+			<p><strong>Data Visualization:</strong> R Shiny, Advanced MS Excel (Pivot Tables, Power Query, Macros), Power BI, Tableau, Looker</p>
+			<p><strong>Cloud & Software Systems:</strong> Azure, Databricks, AWS, Windows, Unix</p>
+			<p><strong>Soft Skills:</strong> Problem-solving & Analytical Thinking, Stakeholder Management, Team Collaboration</p>
+</div>
+
+		</div>
+
         </div>
 
         <div id="resume" class="section">
             <h2>My Resume</h2>
-            <p>You can view or download my resume <a href="Hetal_patel_Resume.pdf" target="_blank">here</a>.</p>
+            <p>You can view or download my resume <a href="hetal_patel_resume.pdf" target="_blank">here</a>.</p>
         </div>
 
         <div id="contact" class="section">
@@ -228,6 +260,7 @@ body {
                 Email: <a href="mailto:da.hetal.patel@gmail.com">da.hetal.patel@gmail.com</a></li>
                 <br>Phone: +1-204-402-0918</li>
                 <br>LinkedIn: <a href="https://www.linkedin.com/in/da-hetal-patel/" target="_blank">linkedin.com/in/hetal-patel</a></li>
+				<br>Tableau Projects:<a href="https://public.tableau.com/app/profile/hetal.patel3" target ="blank">tableau.com/hetal-patel <a></li>
             </ul>
         </div>
 
